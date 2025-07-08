@@ -1,0 +1,132 @@
+.main-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+
+.main-slider .slides {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+.main-slider .slide {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    transition: transform 1200ms ease-out, filter 1200ms ease-out;
+}
+
+.main-slider .slide.smooth-move-to-left {
+    transform: translateX(-100%);
+    filter: opacity(0.5)
+}
+.main-slider .slide.jump-to-left {
+    transition: none;
+    transform: translateX(-100%);
+    filter: opacity(0.5)
+}
+
+.main-slider .slide img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: top;
+}
+
+.main-slider .slide .slide-text {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ffffff55;
+    border-radius: 36px;
+
+    text-align: center;
+}
+
+.main-slider .slide .slide-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.main-slider .slide .slide-subtitle {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.main-slider .slide .slide-button {
+    display: inline-block;
+    padding: 12px 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-slider .main-slider-button {
+    position: absolute;
+    top: 182px;
+    width: 36px;
+    height: 36px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px 1px #666666;
+    cursor: pointer;  
+}
+
+.main-slider .main-slider-button.previous {
+    left: 20px;
+}
+
+.main-slider .main-slider-button.next {
+    right: 20px;
+}
+
+.main-slider .controller {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-slider .controller span {
+    display: inline-block;
+    margin: 0 6px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.main-slider .controller span.active {
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-slider .slide .slide-title {
+        font-size: 24px;
+    }
+    
+    .main-slider .slide .slide-subtitle {
+        font-size: 18px;
+    }
+    
+    .main-slider .slide .slide-button {
+        padding: 8px 16px;
+        border-radius: 4px;
+        color: #000000;
+        font-size: 12px;
+    }
+}
