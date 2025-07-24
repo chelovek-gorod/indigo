@@ -4,6 +4,9 @@ body {
     font-family: Roboto, Arial, sans-serif;
     color: #000000;
     background-color: #ffffff;
+    background-image: url(../images/bg_texture.jpg);
+    background-position: top center;
+    background-repeat: repeat;
     /**/
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */

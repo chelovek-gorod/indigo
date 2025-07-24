@@ -1,4 +1,22 @@
+/* PAVING HR */
+.paving-hr {
+    width: 100%;
+    height: 124px;
+    background-image: url(../images/paving-texture.png);
+    background-position: top center;
+    background-repeat: repeat;
+}
+
+.about, .services {
+    font-size: 18px;
+}
+
+/* ABOUT */
+
 .about h1 {
+    margin: 20px auto;
+    max-width: 860px;
+    width: 90%;
     font-family: Philosopher;
     font-weight: bold;
     font-size: 32px;
@@ -7,8 +25,136 @@
 .about h1 span {
     font-weight: normal;
 }
-
-.about .about-container {
+.about .p-subtitle {
     margin: 0 auto;
     max-width: 860px;
+    width: 90%;
+    color: #333333;
+    text-align: center;
+}
+
+.about .about-container {
+    margin: 40px auto;
+    max-width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .about-container .about-block {
+    width: 260px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    background-color: #ffffff;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+.about .about-container .about-block h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+.about .about-container .about-block img {
+    width: 86px;
+    filter: opacity(0.7);
+    transition: filter 0.6s ease;
+}
+.about .about-container .about-block p {
+    font-size: 16px;
+}
+.about .about-container .about-block:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px 3px #333333;
+}
+.about .about-container .about-block:hover img{
+    filter: opacity(1);
+}
+
+/* SERVICES */
+
+.services h1 {
+    margin: 20px auto;
+    max-width: 860px;
+    width: 90%;
+    font-family: Philosopher;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center;
+}
+.services .p-subtitle {
+    margin: 0 auto;
+    max-width: 860px;
+    width: 90%;
+    color: #333333;
+    text-align: center;
+}
+
+.services .services-container {
+    margin: 40px auto;
+    max-width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .services-container .services-block {
+    width: 415px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    background-color: #ffffff;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+.services .services-container .services-block h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+.services .services-container .services-block img {
+    width: 86px;
+    filter: opacity(0.7);
+    transition: filter 0.6s ease;
+}
+.services .services-container .services-block p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.services .services-container .services-block ul {
+    font-size: 16px;
+    color: #333333;
+    text-align: left;
+}
+.services .services-container .services-block:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px 3px #333333;
+}
+.services .services-container .services-block:hover img{
+    filter: opacity(1);
+}
+
+@media (max-width: 960px) {
+    .about .about-container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .about .about-container .about-block{
+        margin: 20px;
+    }
+
+    .services .services-container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .services .services-container .services-block {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .services .services-container .services-block {
+        margin: 20px;
+        width: 90%;
+    }
 }
