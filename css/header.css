@@ -19,16 +19,11 @@ header {
     font-size: 26px;
 }
 
-header .active-page {
+.header-navbar li a.active-page {
     color: #000000;
     cursor: default;
 }
-.header-navbar li a.active-page:hover {
-    color: #000000;
-    cursor: default;
-}
-
-.header-navbar li a.active-page:hover img{
+.header-navbar li a.active-page img{
     color: #000000;
     filter: opacity(1);
     cursor: default;
