@@ -3,7 +3,9 @@
 useMobileNavbar()
 
 function useMobileNavbar() {
-    let isMobileSize = window.innerWidth <= 640
+    const maxWidth = 768
+
+    let isMobileSize = window.innerWidth <= maxWidth
     let isNavbarVisible = false
 
     window.addEventListener('resize', handleScreenResize)
@@ -31,7 +33,7 @@ function useMobileNavbar() {
     }
 
     function handleScreenResize() {
-        isMobileSize = window.innerWidth <= 640
+        isMobileSize = window.innerWidth <= maxWidth
         if (!isMobileSize) showMobileNavbar()
         else hideMobileNavbar()
     }
