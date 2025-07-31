@@ -3,15 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <!-- title and description -->
-        <title>IndigoStone – декоративный камень, производство и продажа тротуарной плитки в Гомеле</title>
-        <meta name="description" content="У нас вы можете купить тротуарную плитку и декоративный камень по ценам ниже, чем у конкурентов. Так как у нас собственное производство плитки и декоративного камня. Звоните: +375 29 615-67-20.">
+        <title>Индиго Стоун – декоративный камень, производство и продажа тротуарной плитки в Гомеле</title>
+        <meta name="description" content="У нас вы можете купить тротуарную плитку и декоративный камень по ценам ниже, чем у конкурентов. Так как у нас собственное производство плитки и декоративного камня.">
         <!-- viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <!-- styles -->
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link rel="stylesheet" href="./css/slider.css" type="text/css">
         <link rel="stylesheet" href="./css/main.css" type="text/css">
-        <link rel="stylesheet" href="./css/paving-hr.css" type="text/css">
         <!-- icons -->
         <link rel="icon" href="./favicon.png"> <!--32х32-->
         <link rel="apple-touch-icon" href="./icons/touch-icon-iphone.png"> <!--60х60-->
@@ -19,22 +18,101 @@
         <link rel="apple-touch-icon" sizes="120x120" href="./icons/touch-icon-iphone-retina.png">
         <link rel="apple-touch-icon" sizes="152x152" href="./icons/touch-icon-ipad-retina.png">
         <!-- open graph -->
-        <meta property="og:title" content="IndigoStone – декоративный камень, производство и продажа тротуарной плитки в Гомеле" />
+        <meta property="og:title" content="Индиго Стоун – декоративный камень, производство и продажа тротуарной плитки в Гомеле" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://indigostone.by/" />
         <meta property="og:image" content="./icons/og.png" /> <!-- OG image is 1200×630 pixels  -->
         <meta property="og:site_name" content="indigostone.by" />
-        <meta property="og:description" content="У нас вы можете купить тротуарную плитку и декоративный камень по ценам ниже, чем у конкурентов. Так как у нас собственное производство плитки и декоративного камня. Звоните: +375 29 615-67-20." />
+        <meta property="og:description" content="У нас вы можете купить тротуарную плитку и декоративный камень по ценам ниже, чем у конкурентов. Так как у нас собственное производство плитки и декоративного камня." />
         <meta property="og:locale" content="ru" />
 
+        <!-- -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://indigostone.by/#organization",
+                        "name": "Индиго Стоун",
+                        "url": "https://indigostone.by/",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "@id": "https://indigostone.by/#logo",
+                            "url": "https://indigostone.by/images/logo.png",
+                            "width": "177",
+                            "height": "140"
+                        },
+                        "description": "Производство и продажа тротуарной плитки и декоративного камня в Гомеле",
+                        "sameAs": [
+                            "https://www.instagram.com/indigostone.by/"
+                        ]
+                    },
+                    {
+                        "@type": "LocalBusiness",
+                        "@id": "https://indigostone.by/#localbusiness",
+                        "parentOrganization": {
+                            "@id": "https://indigostone.by/#organization"
+                        },
+                        "name": "Индиго Стоун",
+                        "image": "https://indigostone.by/images/slide_1.jpg",
+                        "telephone": "+375296156720",
+                        "email": "indigo.plitka@mail.ru",
+                        "priceRange": "$$",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "ул. Комсомольская, 2Б/5",
+                            "addressLocality": "Ветка",
+                            "addressRegion": "Гомельская область",
+                            "postalCode": "247131",
+                            "addressCountry": "BY"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": "52.5591",
+                            "longitude": "31.1794"
+                        },
+                        "openingHoursSpecification": {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                            "opens": "08:00",
+                            "closes": "17:00"
+                        },
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Продукция",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Product",
+                                        "name": "Тротуарная плитка"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Product",
+                                        "name": "Декоративный камень"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        </script>
+
+        <!-- JS -->
         <script defer src="./js/mobile-header-navbar.js"></script>
         <script defer src="./js/main-slider.js"></script>
+        <script defer src="./js/footer.js"></script>
     </head>
     <body>
 
         <!-- HEADER -->
         <header>
-            <a href="#" class="header-compony">
+            <a class="header-compony">
                 <img class="header-logo" alt="indigo-stone логотип" src="./images/logo.png">
                 <p class="header-title">Индиго Стоун</p>
             </a>
@@ -44,27 +122,27 @@
             <nav class="header-navbar">
                 <ol class="header-navbar-list">
                     <li>
-                        <a href="#" class="active-page">
+                        <a class="active-page">
                             <img src="./images/icon_home.svg"> Главная
                         </a>
                     </li>
                     <li>
-                        <a href="./catalog/index.html" class="catalog">
+                        <a href="./katalog/index.html" class="catalog">
                             <img src="./images/icon_blocks.svg"> Каталог
                         </a>
                     </li>
                     <li>
-                        <a href="./articles/index.html">
+                        <a href="./stati/index.html">
                             <img src="./images/icon_chat.svg"> Статьи
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="./o-kompanii.html">
                             <img src="./images/icon_info.svg"> О компании
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="./kontakty.html">
                             <img src="./images/icon_location.svg"> Контакты
                         </a>
                     </li>
@@ -191,37 +269,39 @@
         <footer>
             <div class="footer-section">
                 <h4>Разделы сайта:</h4>
+                <hr>
                 <nav>
                     <ol>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="./catalog/index.html">Каталог</a></li>
-                        <li><a href="./catalog/articles.html">Статьи</a></li>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Карта сайта</a></li>
+                        <li><a >Главная</a></li>
+                        <li><a href="./katalog/index.html">Каталог</a></li>
+                        <li><a href="./stati/index.html">Статьи</a></li>
+                        <li><a href="./o-kompanii.html">О компании</a></li>
+                        <li><a href="./kontakty.html">Контакты</a></li>
                     </ol>
                 </nav>
             </div>
 
             <div class="footer-section">
                 <h4>Контакты:</h4>
+                <hr>
                 <p>
-                    <span>Адрес офиса и производства:</span><br>
+                    <img src="./images/icon_footer_point.svg"><span>Адрес офиса и производства:</span><br>
                     247131, РБ, г. Ветка, ул. Комсомольская, 2Б/5
                 </p>
                 <p>
-                    <span>Телефоны:</span><br>
+                    <img src="./images/icon_footer_phone.svg"><span>Телефоны:</span><br>
                     <a href="tel:+375296156720">+375 29 615-67-20</a> Константин (плитка)<br>
                     <a href="tel:+375293467526">+375 29 346-75-26</a> Ирина
                 </p>
                 <p>
-                    <span>Электронная почта:</span><br>
+                    <img src="./images/icon_footer_email.svg"><span>Электронная почта:</span><br>
                     <a href="mailto:indigo.plitka@mail.ru">indigo.plitka@mail.ru</a>
                 </p>
             </div>
 
             <div class="footer-section">
                 <h4>Реквизиты:</h4>
+                <hr>
                 <p>
                     ООО «Индиго Стоун», УНП 490769955<br>
                     г. Ветка, ул. Комсомольская, 2Б/5<br>
@@ -238,16 +318,6 @@
         <a class="mobile-only" href="tel:+375296156720">
             <img src="./images/icon_mobile_phone.svg">
         </a>
-        <script>
-            // copyright
-            document.addEventListener('DOMContentLoaded', () => {
-                document.getElementById('current-year').textContent = new Date().getFullYear();
-            });
 
-            // phone on mobile
-            const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-            if (isMobile) document.querySelector('.mobile-only').style.display = 'block';
-        </script>
-        
     </body>
 </html>
