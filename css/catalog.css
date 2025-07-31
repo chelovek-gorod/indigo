@@ -31,6 +31,7 @@
     object-fit: cover;
     width: 360px;
     height: 180px;
+    border-radius: 4px;
 }
 .catalog-item p {
     position: relative;
