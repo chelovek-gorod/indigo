@@ -11,6 +11,7 @@ body {
     background-image: url(../images/bg_texture.jpg);
     background-position: top center;
     background-repeat: repeat;
+    background-attachment: fixed;
     /**/
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -19,6 +20,7 @@ body {
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
 }
+body.normal {background-attachment: scroll !important;}
 
 .paving-hr {
     width: 100%;
@@ -33,6 +35,13 @@ body {
     width: 90%;
     margin: 20px auto 40px;
     font-size: 18px;
+}
+
+.article img {
+    display: inline-block;
+    margin: 20px 0;
+    width:  100%;
+    border-radius: 6px;
 }
 
 a {
